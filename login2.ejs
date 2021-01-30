@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="new-header">
+      <a href="/contact">連絡掲示板</a>
+    </div>
+    <div class="new-main">
+      <div class="new-text">
+        <h2>ログイン</h2>
+        <ul>
+          <% if (errors.length > 0) { %>
+
+          <li><%= errors%></li>
+
+          <% }%>
+        </ul>
+        <div class="registration-area">
+          <p>ユーザー名</p>
+        <form action="/login2" method="post">
+          <input type="text" name="userName" value="">
+          <p>パスワード</p>
+          <input type="password" name="userPassword" value="">
+          <input type="submit" name="" value="ログイン">
+        </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

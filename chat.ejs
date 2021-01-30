@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>マルチ（笑）</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <%- include('header'); %>
+  <div class="message-background">
+    <div class="form-position">
+    <form class="" action="/chat2" method="post">
+      <input type="text" name="message" value="">
+      <input type="submit" name="" value="送信">
+      <a href="/line">選びなおす</a>
+      <a href="/contact">戻る</a>
+    </form>
+    </div>
+     <div class="message-area">
+     <div class="message">
+
+      <% chat.forEach((chats) => {%>
+        <p class="<%= chats.sender%>"><span class="span1">FROM:<%= locals.receiver %></span><br>
+        <span class="span2"><%= chats.message%></span></p>
+      <%})%>
+
+      <style>
+        .<%= locals.username%>  {
+          display:block;
+          float: left;
+          margin-right: 40%;
+          }
+      </style>
+      <style>
+        .<%= locals.username%> span.span1  {
+           color: WhiteSmoke;
+           user-select: none;
+          }
+      </style>
+      <style>
+        .<%= locals.receiver%>  {
+          display:block;
+          float: right;
+          text-align:right;
+          margin-left: 40%;
+        }
+
+      </style>
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+  </body>
+  </html>

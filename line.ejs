@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h3>相手を選択してくれ</h3>
+　　　<form class="" action="/chat" method="post">
+　　　
+　　　
+      <% users.forEach((user) => {%>
+
+        <input type="submit" name="receiver" value="<%= user.name %>">
+
+        <% }) %>
+    </form>
+  </body>
+</html>

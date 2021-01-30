@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
+  </head>
+  <body>
+   <ul>
+     <% users.forEach((user) => { %>
+       <li>
+       <div class="">
+         <span><%= user.name %></span>
+         <span><%= user.password %></span>
+       </div>
+       </li>
+      <% }) %> 
+   </ul>
+  </body>
+</html>

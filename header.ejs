@@ -1,0 +1,24 @@
+
+    <div class="header">
+      <div class="container">
+    <div class="header-left">
+      <h2>連絡掲示板</h2>
+    </div>
+    <div class="header-left">
+      <p>お前は<span><%= locals.username %></span>だ。</p>
+    </div>
+
+    <div class="header-right">
+        <% if(locals.isLoggedIn) { %>
+        <a href="/logout">ログアウト</a>
+        <% }else { %>
+        <a href="/new">新規登録</a>
+        <a href="/login2">ログイン</a>
+        <% } %>
+
+        
+
+
+    </div>
+    </div>
+    </div>

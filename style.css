@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.top-text {
+ text-align: center;
+ margin: 0 auto;
+ background-color:honeydew ;
+ padding: 40px 0 ;
+}
+
+.top {
+  margin-top: 50px;
+
+
+}
+
+.top-text h1 {
+  font-size: 80px;
+
+}
+
+.top-text p {
+  color: #778899;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 30px 90px ;
+  color: ;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 2px;
+
+}
+
+.startup {
+  background-color: white;
+  border: 2px solid #66CDAA;
+  color: #66CDAA;
+  font-size: 25px;
+  box-shadow: 0 10px mediumseagreen;
+}
+
+.startup:active {
+  position: relative;
+  top: 10px;
+  box-shadow: none;
+}
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover {
+  transition: all 0.5s ease;
+}
+
+.startup:hover {
+ transition: all 0s ease;
+}
+
+.startup:hover {
+  background-color: #66CDAA;
+  color: white;
+
+}
+
+.top-right {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.new-header {
+  background-color: honeydew ;
+  height: 80px;
+}
+
+.new-header a {
+  margin: 20px 50px;
+  font-size: 30px;
+  display: inline-block;
+  color: black;
+}
+
+.new-main {
+  background-color: WhiteSmoke;
+  height: 1170px;
+
+}
+
+.new-text {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.new-text h2 {
+  margin-top: 0;
+  padding-top: 30px;:
+}
+
+.registration-area {
+  background-color: white;
+  padding: 20px 30px 30px ;
+}
+
+.registration-area input[type="submit"] {
+  display: block;
+  height: 50px;
+  width: 120px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  background-color:honeydew;
+  height: 70px;
+  position: fixed;
+  top:0px;
+  left:0px;
+}
+
+.header-left {
+  width: 30%;
+  float: left;
+}
+
+
+
+.header-right {
+  width: 33.3%;
+  float: right;
+  line-height: 70px;
+}
+
+.header-left p {
+  color: #778899;
+  float: left;
+  margin-top: 40px;
+}
+
+.header-left h2 {
+  letter-spacing: 10px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 0;
+  width: 200px;
+}
+
+.header-left span {
+  color: red;
+}
+
+.header-right a {
+float: right;
+margin-right: 25px;
+display: block;
+color: black;
+padding: 0 10px;
+}
+
+.header-right a:hover {
+  background-color: mediumseagreen;
+  color: WhiteSmoke;
+}
+
+
+.main {
+  height: 400px;
+
+}
+
+.line {
+  width: 45%;
+  float: left;
+  padding-left: 40px;
+  border: 2px solid mediumseagreen;
+  background-color: honeydew;
+}
+
+.twitter {
+  width: 45%;
+  float: right;
+  padding-left: 40px;
+  border: 2px solid mediumseagreen;
+    background-color: honeydew;
+}
+
+.main a {
+  text-align: center;
+  width: 120px;
+  margin: 20px auto;
+  display: block;
+  line-height: 40px;
+  border: 1px solid mediumseagreen;
+  padding: 5px 15px ;
+  background-color: white;
+  color: black;
+
+}
+
+.main a:hover {
+  background-color: mediumseagreen;
+  color: WhiteSmoke;
+  padding: 9px 20px;
+  margin: 16px auto;
+}
+
+.main a:active {
+  background-color: mediumseagreen;
+  padding: 5px 15px ;
+  margin: 20px auto;
+}
+
+
+.main-bottom {
+  text-align: center;
+}
+
+.main-bottom a {
+  display: block;
+  padding: 15px 5px ;
+  background-color:honeydew ;
+    box-shadow: 0 5px mediumseagreen;
+    width: 120px;
+    margin: 15px auto;
+      border: 1px solid mediumseagreen;
+      transition: all 0s ease;
+}
+
+.main-bottom a:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+  transition: all 0s ease;
+}
+
+.message-background {
+  padding-top: 75px;
+}
+
+.message-area {
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+.message p {
+  line-height: 30px;
+  width: auto;
+}
+
+  body {
+    background-color: whitesmoke;
+  }
+
+.message span.span2 {
+  display: block;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid  mediumseagreen;
+  border-radius: 10px;
+}
+
+.form-position {
+  position: fixed;
+  top:75px;
+  left:30px;
+}
+
+.board {
+  padding-top: 80px;
+}
+
+.form-position a {
+  padding-left: 15px;
+}

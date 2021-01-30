@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <%- include('header'); %>
+    <div class="board">
+    <div class="form-position">
+    <form class="" action="/board" method="post">
+      <a>name:</a><input type="text" name="posterName" value="<%= locals.userName%>">
+      <a> content:</a><input type="textarea" name="content" value="">
+      <input type="submit" name="" value="投稿する">
+      <a href="/contact">戻る</a>
+
+    </form>
+    </div>
+    <div class="container">
+
+    <%board.forEach((boards) => {%>
+      <p>post number:<%= boards.id%></p>
+      <p>poster name:<%= boards.poster%></p>
+      <p>><%= boards.content%></p>
+      <p>~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~</p>
+  <%  })%>
+     </div>
+     </div>
+
+  </body>
+</html>
